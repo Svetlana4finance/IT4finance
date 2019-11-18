@@ -1,0 +1,3 @@
+ALTER TABLE actions ADD CONSTRAINT entfk FOREIGN KEY (ent_name) REFERENCES info_comp (ent_name);
+ALTER TABLE actions ADD CONSTRAINT ratfk FOREIGN KEY (rating_record_id) REFERENCES rat_info (rating_record_id);
+ALTER TABLE actions ADD CONSTRAINT gradefk FOREIGN KEY (grade) REFERENCES scale_EXP_task (grade)
